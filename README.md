@@ -28,9 +28,16 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain what a token is used for.
+  A token is used to add authentication in order to prevent components rendering with protected data.  It is returned from an API after a successful login request, wherein it can be set to local storage to be utilized in a header for any axios calls or a condition which must be true for a route to render a component
 2. What steps can you take in your web apps to keep your data secure?
+  Some steps to keep data secure would be to add a timeout where a token will be cleared from local storage afer a time, requiring a user log in again or adding a second layer of authentication for edit and delete requests.
 3. Describe how web servers work.
+  Web servers are physical devices that store the code for websites.  A user navigates to a domain name from their URL input in their browser, the request is sent to their modem, which is then routed to a domain name server, which then caches the data transfer between client computer and web server. further requests from the server hosting the website being visited will then be through an established connection between the user and the web server.
 4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+  Create-- the post method creates an authentication session
+  Read -- the data is set to state and rendered in the component
+  Update -- the data is edited via a PUT request
+  Delete -- the data is deleted via a DELETE request
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
